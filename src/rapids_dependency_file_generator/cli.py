@@ -15,9 +15,7 @@ def generate_matrix(matrix_arg):
     if not matrix_arg:
         return {}
     matrix = {}
-    for matrix_column in matrix_arg.split(";"):
-        kv_pair = matrix_column.split("=")
-        matrix[kv_pair[0]] = [kv_pair[1]]
+    
     return matrix
 
 
